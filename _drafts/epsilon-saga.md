@@ -26,9 +26,9 @@ So we said "Fork it".
 > In software engineering, a project fork happens when developers take a copy of source code from one software package and start independent development on it, creating a distinct and separate piece of software. 
 --[Wikipedia](https://en.wikipedia.org/wiki/Fork_(software_development))
 
-We knew that it was going to be hard to maintain a fork. It takes considerable effort to continue development of a fork, all the while addressing the changes in the original project. The more changes one makes in a fork, the harder it is to maintain it.
+We knew that it was going to be hard to maintain a fork. It takes considerable effort to continue developing a fork, all the while addressing the changes in the original project. The more changes one makes in a fork, the harder it is to maintain it.
 
-We naturally started out by adding the much-needed support of large maps, and then went on to copy many features from tdelc. It was a very productive week for us.
+We naturally started by adding the much-needed support of large maps, and then went on to copy many features from tdelc. It was a very productive week for us.
 
 But then we had to address some auxiliary issues, like figuring out how to build a working game application and a good development cycle.
 So we built some [release tools](https://github.com/amir-arad/EmptyEpsilon-build-scripts), and later published a popular [developer guide](https://gist.github.com/amir-arad/169993b47e97034277e0e5dfe18b1397) to help other developers set up their environment. All the while we kept offering [bug fixes](https://github.com/daid/EmptyEpsilon/pull/557) and [updates](https://github.com/daid/EmptyEpsilon/pull/591) to the original project.
@@ -46,7 +46,6 @@ Then we began addressing the screens themselves: EmptyEpsilon was designed prima
 [![factions](/assets/img/epsilon/epsilon_screen_factions_small.png){: .img-thumbnail.float-left :}](/assets/img/epsilon/epsilon_screen_factions.png)
 Then we removed some mechanics that we never needed in the first place, like the reputation system, and added more complex features like connecting multiple GM stations, tweaking factions diplomatic alignments, sending scan and hack tasks to new stations, manually control of AI ships from the GM station on demand, communicating with the ship's computer, password-protecting database entries, and so on. 
 
-
 ## The drift
 We made efforts of suggesting most of what we did to the original project. The utilities and fixes got [accepted](https://github.com/daid/EmptyEpsilon/pull/656), while changes of behavior got [rejected](https://github.com/daid/EmptyEpsilon/pull/653). 
 
@@ -54,13 +53,8 @@ As a result, other game organizers that track the activities in the EmptyEpsilon
 
 We were making so many changes to our fork, in so many places, that at some point the overhead of trying to keep up with the original project was not worth the effort anymore. We stopped trying to keep up, and the gap between the forks became un-bridgeable.
 
-## A new hope
-Lately, tdelc did a thing. After an initiative to translate the game to French (the language of his LARPs), and since he's already accumulated a large amount of LARP-enabling features that didn't sit well with the original project, he dedicated his fork to be [the primary LARP fork of EmptyEpsilon](http://bridgesim.net/discussion/510/larp-v1-3-version-of-empty-epsilon), not just of his own games. He began collecting more of our features into his branch, with the intention to forever keep in sync with the original project. His work allows more LARPs to take advantage of the work we put into our features, and we're getting actual "thank you" messages from LARP organizers.
-
-And on another front, daid (the person behind EmptyEpsilon) started a rewrite of EmptyEpsilon from the ground up, called [EEOne](https://github.com/daid/EmptyEpsilonOne), based on a new engine and modern C++.
-
 ## The aftermath
 EmptyEpsilon is a great game. It offers a great versatile experience out of the box, while being open for extensions and modifications in multiple ways. We've used it extensively, learned a lot from daid's work and designs (some lessons learned as well), got a lot of value from it ant gave a lot back to the community. 
 
-But as much as we've enjoyed this crazy ride, EmptyEpsilon never really gave us the freedom we need to make games the way we envisioned them, due to its inherent limitations. We've outgrown it, time to move on. We are starting our own simulator, from scratch, that will fit our vision. It will take years to complete, and in the meanwhile, we will continue using our EmptyEpsilon fork.
+But as much as we've enjoyed this crazy ride, EmptyEpsilon never really gave us the freedom we need to make games the way we envisioned them, due to its inherent limitations. We've outgrown it, time to move on. We are starting a simulator of our own, from scratch, that will fit our vision. It will take years to complete, and in the meanwhile, we will continue using our EmptyEpsilon fork.
 
