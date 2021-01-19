@@ -4,7 +4,7 @@ title: Welcome
 subtitle: Welcome to the Starwards devblog
 # gh-repo: daattali/beautiful-jekyll
 # gh-badge: [star, fork, follow]
-tags: [test]
+tags: [blog]
 comments: true
 ---
 We are happy to announce that we are working on Starwards, a LARP spaceship simulator.

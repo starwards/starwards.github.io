@@ -42,7 +42,9 @@ layout: base
       <article role="main" class="blog-post">
         {{ content }}
       </article>
-
+      {% if page.images %}
+        {% include image-gallery.html folder=page.images %}
+      {% endif %}
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
           <span>Tags:</span>

@@ -1,0 +1,50 @@
+<style>
+  .image-gallery {
+    overflow: auto;
+    margin-left: -1% !important;
+  }
+  .image-gallery div {
+    display: block;
+    margin: 0 0 1% 1%;
+  }
+  .image-gallery div a {
+    text-align: center;
+    text-decoration: none !important;
+    color: #777;
+  }
+  .image-gallery div a span {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 3px 0;
+  }
+  .image-gallery div a img {
+    width: 100%;
+    display: block;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+  }
+</style>
+
+<div class="grid-container image-gallery">
+    {% for file in site.static_files %} 
+    {% if file.path contains include.folder %}
+    {% if file.basename contains '_small' %}
+    {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' or file.extname == '.png' %}
+    {% assign filenameparts = file.path | split: "/" %}
+    {% assign filename = filenameparts | last | replace: file.extname,"" | replace: '_small','' %}
+    <div class="grid-item">
+      <a href="{{ file.path | replace: '_small','' | relative_url }}" title="{{ filename }}"
+        ><img
+          src="{{ file.path | relative_url }}"
+          alt="{{ filename }}"
+          title="{{ filename }}"
+          class="img-thumbnail"
+        /><span>{{ filename }}</span></a
+      >
+    </div>
+    {% endif %}{% endif %}{% endif %}{% endfor %}
+</div>
