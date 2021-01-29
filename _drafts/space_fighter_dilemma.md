@@ -33,7 +33,7 @@ Now, if ships can intercept the upcoming torpedos with the short-range weaponry,
 
 The YouTube channel "First-Pass" addressed that subject perfectly in his explanation of why there are no space fighters in the world of the “Expanse” (one of our main influences):
 
-https://www.youtube.com/watch?v=t7_MIps_cAM
+[Why Are There No Fighters in The Expanse?](https://www.youtube.com/watch?v=t7_MIps_cAM)
 
 This issue puts in question the space fighter's role; yes, it might have a justification as an orbital defense force, but not necessarily in full-scale space warfare.
 
