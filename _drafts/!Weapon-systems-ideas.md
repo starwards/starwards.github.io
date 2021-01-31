@@ -30,4 +30,4 @@ We decided that we will divide the engagement ranges into three circles:
 •	Long range 
 
 
-We know that we want the close range circle to be up to a few KMs from the vessel, but not it set the distances for the other two circles. 
+We know that we want the close range circle to be up to a few KMs from the vessel, but not yet set the distances for the other two circles. 
