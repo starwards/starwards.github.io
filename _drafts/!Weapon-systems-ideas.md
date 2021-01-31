@@ -11,7 +11,7 @@ comments: true
 One of the first discussions we had after deciding on our first milestone (playable dogfight) was regarding the weapon systems we will have in our game. After all, having a dogfight without the ability to destroy the opponent ship will end as a pretty dull dogfight.
 As we already agreed that we would have space fighters, we understood that the first weapon system we will need to design would be suitable to be used by small ships and for close range.
 
-##Range in space?
+## Range in space?
 
 Close range? Some of you might question the above statement, as the range for weapons in space can prove to be a bit tricky. After all, if I"m firing a projectile in space, it is will keep flying until it hits something. Unlike firing on the surface, there is no gravity or air friction to slow down my projectile.
 ##Diffrenet weapons for each range
@@ -19,7 +19,7 @@ Close range? Some of you might question the above statement, as the range for we
 If our weapons don't have range limitations, the weapon's actual limit is how well it is performing in different engagement ranges. For example, a hail of bullets might be extremely dangerous in very close ranges but very easy to avoid in long ranges of the projectile's extremely small size and speed.
 This means we need to think about weapon systems that would be effective in different engagement ranges. 
 
-##The three circles 
+## The three circles 
 
 We decided that we will divide the engagement ranges into three circles:
 
