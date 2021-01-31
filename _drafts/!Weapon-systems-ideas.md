@@ -24,7 +24,10 @@ This means we need to think about weapon systems that would be effective in diff
 We decided that we will divide the engagement ranges into three circles:
 
 •	Close range 
+
 •	Intermediate range 
+
 •	Long range 
+
 
 We know that we want the close range circle to be up to a few KMs from the vessel, but not it set the distances for the other two circles. 
