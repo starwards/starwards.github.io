@@ -29,7 +29,7 @@ We decided to divide the engagement ranges into three circles - close, intermedi
 ### Close range 
 This engagement range will include any weapon systems designed to fight within close proximity to the vessel. They are usually not very accurate and relying more on the rate of fire and projectile’s velocity. [CIWS]( https://en.wikipedia.org/wiki/Close-in_weapon_system) is an excellent example of a weapon system that belongs to the close engagement range circle. 
 
-<iframe width="560" height="420" src="http://www.youtube.com/embed/t7_MIps_cAM" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="420" src="https://www.youtube-nocookie.com/embed/t7_MIps_cAM" frameborder="0" allowfullscreen></iframe>
 
 ### Intermediate range
 The intermediate engagement circle is a middle ground range for weapon systems that will be less effective in the other ranges.  The [rail gun]( https://en.wikipedia.org/wiki/Railgun) is a weapon system that naturally reside in this engagement ranges. You can shoot at very close or very far targets, but it is safe to assume that on very long ranges it will be relativity easy to dodge the projectile and in close ranges the slow rate of fire and charge time will allow most of the targets to outmaneuver the system or its targeting capabilities. 
