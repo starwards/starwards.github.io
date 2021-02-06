@@ -22,14 +22,18 @@ This means we need to think about weapon systems that would be effective in diff
 
 ## The three circles 
 
-We decided to divide the engagement ranges into three circles - close, intermediate, and long. The idea behind these circles is to define types of engagement, which will be different from each other and will employ diverse combat styles. Each weapon system in the game will belong to one of these engagement circles, where the exact range could be affected by the specific weapon system, ship’s sensors, firing computer, and more.   
+We decided to divide the engagement ranges into three circles - close, intermediate, and long. The idea behind these circles is to define types of engagement, which will be different from each other and will employ diverse combat styles. Each weapon system in the game will belong to one of these engagement circles, where the exact range could be affected by the specific weapon system, ship’s sensors, firing computer, and more. It is more than likely that some weapon systems could be used in more than one engagement circle. 
 
 ### Close range 
 
 This engagement range will include any weapon systems designed to fight within close proximity to the vessel. They are usually not very accurate and relying more on the rate of fire and projectile’s velocity. [CIWS]( https://en.wikipedia.org/wiki/Close-in_weapon_system) is an excellent example of a weapon system that belongs to the close engagement range circle. 
 
-### Intermediate-range
-The intermediate engagement circle is a middle ground range for weapon systema that will be less effective in the other ranges.  The [rail gun]( https://en.wikipedia.org/wiki/Railgun) is a weapon system that naturally reside in this engagement ranges. You can shoot at very close or very far targets, but it is safe to assume that on very long ranges it will be relativity easy to dodge the projectile and in close ranges the slow rate of fire and charge time will allow most of the targets to outmaneuver the system or its targeting capabilities. 
+### Intermediate range
+The intermediate engagement circle is a middle ground range for weapon systems that will be less effective in the other ranges.  The [rail gun]( https://en.wikipedia.org/wiki/Railgun) is a weapon system that naturally reside in this engagement ranges. You can shoot at very close or very far targets, but it is safe to assume that on very long ranges it will be relativity easy to dodge the projectile and in close ranges the slow rate of fire and charge time will allow most of the targets to outmaneuver the system or its targeting capabilities. 
+
+### Long range
+Weapon systems that can destroy their targets from extremely long ranges will belong to this engagement circle. These weapon systems usually require guidance and rely on long-range sensors to ensure they can find and destroy their target. For example, long-range torpedos are among the first weapon systems that come to mind when thinking about the long range engagement.
+
 
 
 
