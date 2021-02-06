@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: Tags
+  link: /tags/
+- name: Team
+  link: /team/
+- name: Helios Games
+  link: https://helios.games/

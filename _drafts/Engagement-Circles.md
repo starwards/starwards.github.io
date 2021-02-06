@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Weapon systems - design ideas 
-subtitle: How spaceships will destory each other in our game?
+title: Engagement Circles 
+subtitle: How range will affect weapon systems
 tags: [product, weapons, design]
 comments: true
 ---

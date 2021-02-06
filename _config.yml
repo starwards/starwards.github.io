@@ -12,9 +12,10 @@ title: Starwards
 author: Amir Arad and Daniel Ginat
 
 # --- List of links in the navigation bar --- #
+# dead code. now using _data/navigation.yml
 
-navbar-links:
-  Helios Games: "https://helios.games/"
+# navbar-links:
+#   Helios Games: "https://helios.games/"
 
 # --- Logo --- #
 
@@ -193,19 +194,23 @@ kramdown:
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+      author: "team"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
-  -
-    scope:
+  - scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
 
 # Exclude these files from production site
 exclude:
@@ -225,3 +230,6 @@ plugins:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
+collections:
+  authors:
+    output: true

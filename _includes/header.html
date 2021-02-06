@@ -39,6 +39,10 @@
 
           {% if include.type == "post" %}
             <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
+            {% assign author = site.authors | where: 'short_name', page.author | first %}
+            {% if author %}
+               - <a href="{{ author.url }}">{{ author.name }}</a>
+            {% endif %}
             {% if page.last-updated %}
               <span class="post-meta">
                 <span class="d-none d-md-inline middot">&middot;</span>
@@ -73,6 +77,10 @@
 
           {% if include.type == "post" %}
             <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
+            {% assign author = site.authors | where: 'short_name', page.author | first %}
+            {% if author %}
+               - <a href="{{ author.url }}">{{ author.name }}</a>
+            {% endif %}
             {% if page.last-updated %}
               <span class="post-meta">
                 <span class="d-none d-md-inline middot">&middot;</span>
