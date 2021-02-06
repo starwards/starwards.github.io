@@ -6,7 +6,7 @@ tags: [blog,weapons,product]
 comments: true
 ---
 
-## First weapon system
+## Introducing the Chain gun
 
 We are happy to introduce our first close range weapon system, which will be used by our first fighter models in the game – The Chain gun!
 
