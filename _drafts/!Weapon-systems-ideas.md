@@ -22,12 +22,9 @@ This means we need to think about weapon systems that would be effective in diff
 
 ## The three circles 
 
-We decided that we will divide the engagement ranges into three circles:
+We decided to divide the engagement ranges into three circles - close, intermediate, and long. The idea behind these circles is to define types of engagement, which will be different from each other and will employ diverse combat styles. Each weapon system in the game will belong to one of these engagement circles, where the exact range could be affected by the specific weapon system, ship’s sensors, firing computer, and more.   
 
-•	Close range - d
+Close range – This engagement range will include any weapon systems designed to fight within close proximity to the vessel. They are usually not very accurate and relying more on the rate of fire and projectile’s velocity. [CIWS]( https://en.wikipedia.org/wiki/Close-in_weapon_system) is an excellent example of a weapon system that belongs to the close engagement range circle. 
 
-•	Intermediate range 
-
-•	Long range 
 
 
