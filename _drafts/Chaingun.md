@@ -18,7 +18,8 @@ A chain gun is a type of [machine gun]( https://en.wikipedia.org/wiki/Machine_gu
 
 Gas operated blowback mechanism:
 
-<iframe width="560" height="420" src="https://www.youtube.com/watch?v=60ksyOJyOZg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="420" src="https://www.youtube.com/watch?v=60ksyOJyOZg" frameborder="0" allowfullscreen>
+</iframe>
 
 Chain operated mechanism:
 
