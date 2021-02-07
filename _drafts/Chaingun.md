@@ -52,7 +52,7 @@ This round has benefits in both anti-air and anti-personnel systems:
 
 Anti-personnel – Apart from the better disperse of the fragmentation, using airburst round provides the ability to penetrate or fly over hardcover and hit the target behind it. For example, a target hiding behind a concrete wall. 
 
-![Engagement-Circles](/assets/img/airbusrt.jfif){: .mx-auto.d-block :}
+![Engagement-Circles](/assets/img/airbusrt.jpg){: .mx-auto.d-block :}
 
 Anti-air – The round will explode near the aircraft/missile and increase the chance to hit with fragmentation.  Obviously, this use is more relevant to our case. 
 
