@@ -36,6 +36,8 @@ Controllability is another advantage of the Chain gun over the blowback mechanis
 
 In a famous test that the US Navy conducted, 29,721 rounds were fired by an EX-34 Chain gun, and the operators were not faced with even one jam or stoppage. 
 
+For these reasons, we believe that the Chain gun will be highly suited for space fighters. Stoppage or jam of their primary weapon can render the fighter useless in combat or force it to return to its carrier. The controllability allows it to maximize its firepower, increasing its chances of survival and the ability to win the fight. 
+
 ## Ammunition 
 
 Ammunition is a significant part of any weapon system. In the end, this will be what will hit and destroy the target.
@@ -58,9 +60,8 @@ Anti-air – The round will explode near the aircraft/missile and increase the c
 
 <iframe width="560" height="420" src="https://www.youtube.com/watch?v=bdwjcayPuag" frameborder="0" allowfullscreen></iframe>
 
+### Why Airburst?
 
-
-
-
+As you have seen in the video on the above section, Airburst can provide a huge advantage when trying to hit a flying target. We believe that directly hitting a fast and highly maneuverable space fighter could be a very challenging mission. Therefore, by using Airburst rounds and the ship’s firing computer, the fighters can shoot rounds that will automatically explode in proximity to their target. We can assume that these rounds will not be able to damage larger and more armored ships, but they would be perfect for taking down the smaller and less armored space fighters. 
 
 
