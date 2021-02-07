@@ -13,7 +13,7 @@ At that point, we could already simulate a basic scenario and render it in 2D on
 And, in sharp contradiction with how stuck the project was, we kept coming up with mechanics ideas for ship systems, guns, cyber warfare, not to mention a myriad of technical "engineering" scenarios and devices, and so on.
 
 ## Enter Game Design
-We talked and talked until we figured that it was time to take the first steps into the game design. We had a high-level model of the game design (an SBS inspired mostly by our fork of EmptyEpsilon), but we hadn't got into the nuts and bolts yet. We needed a milestone to focus on.
+We talked and talked until we figured that it was time to take the first steps into the game design. We had a high-level model of the game design (an SBS inspired mostly by our fork of EmptyEpsilon), but we hadn't got into the nuts and bolts yet. We needed a milestone to focus our efforts.
 
 We knew that whichever parts we design earlier will serve as the foundation for following design choices, so we looked for the one that best fits these criteria:
 
