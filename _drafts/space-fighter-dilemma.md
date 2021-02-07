@@ -2,8 +2,7 @@
 layout: post
 title: The Space Fighter Dilemma
 subtitle: Will we have fighter class spaceships?
-tags: [product]
-comments: true
+tags: [product, dogfight]
 ---
 In one of our very first product brainstorming, we discussed what will be the first milestone for Starwards. We agreed that we want to have a fully working dogfight between two ships.
 This decision brought up a dilemma: are we going to have a "fighter" ship class in our game? 
@@ -15,7 +14,7 @@ This decision brought up a dilemma: are we going to have a "fighter" ship class 
 
  From a LARP perspective, using fighters will easily allow us to add single-seat stations to our game, providing the ability to increase the number of players (and ships!) without the need to add more bridges. 
  
- Fighters can easily turn into unmanned “Drones” which is also a solution for different activities on the ship. 
+ Fighters can easily turn into unmanned "Drones" which is also a solution for different activities on the ship. 
 
 ## What is the issue with fighters
 
