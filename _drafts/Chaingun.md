@@ -52,7 +52,7 @@ Airburst round is a type of ammunition that detonates midair instead of upon con
 
 This round has benefits in both anti-air and anti-personnel systems:
 
-- Anti-personnel – Apart from the better disperse of the fragmentation, using airburst round provides the ability to penetrate or fly over hardcover and hit the target behind it. For example, a target hiding behind a concrete wall. 
+- Anti-personnel – In addition to the better disperse of the fragmentation, using airburst round provides the ability to penetrate or fly over hardcover and hit the target behind it. For example, a target hiding behind a concrete wall. 
 
 ![Airbust](/assets/img/airburst.jpg){: .mx-auto.d-block :}
 
