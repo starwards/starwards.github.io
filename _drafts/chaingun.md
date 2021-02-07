@@ -2,7 +2,7 @@
 layout: post
 title: Introducing the Chain gun
 subtitle: Our first weapon system
-tags: [blog,weapons,product]
+tags: [blog, weapons, product, dogfight]
 comments: true
 ---
 
@@ -18,13 +18,13 @@ A chain gun is a type of [machine gun]( https://en.wikipedia.org/wiki/Machine_gu
 
 Gas operated blowback mechanism:
 
-<iframe width="560" height="420" src="https://www.youtube.com/watch?v=60ksyOJyOZg" frameborder="0" allowfullscreen>
+<iframe width="560" height="420" src="https://www.youtube-nocookie.com/embed/60ksyOJyOZg" frameborder="0" allowfullscreen>
 </iframe>
 
 
 Chain operated mechanism:
 
-<iframe width="560" height="420" src="https://www.youtube.com/watch?v=CAqWpfMApIs" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="420" src="https://www.youtube-nocookie.com/embed/CAqWpfMApIs" frameborder="0" allowfullscreen></iframe>
 
 ### Why the Chain gun?
 
@@ -34,7 +34,7 @@ Reliability and durability – Chain gun weapon systems are incredibly reliable 
 
 Controllability is another advantage of the Chain gun over the blowback mechanisms.  It is possible to vary the motor speed in order to control the rate of fire. This feature helps obtain the maximum rate of fire that is the safest to the gun at the moment, helps with heat management and extraction of fumes. 
 
-In a famous test that the US Navy conducted, 29,721 rounds were fired by an EX-34 Chain gun, and the operators were not faced with even one jam or stoppage. 
+In a famous test that the US Navy conducted, over 100,000 rounds were fired by an EX-34 Chain gun, and the operators were not faced with even one jam or stoppage due to loss of round control in the gun or feeder mechanism. 
 
 For these reasons, we believe that the Chain gun will be highly suited for space fighters. Stoppage or jam of their primary weapon can render the fighter useless in combat or force it to return to its carrier. The controllability allows it to maximize its firepower, increasing its chances of survival and the ability to win the fight. 
 
@@ -58,10 +58,10 @@ This round has benefits in both anti-air and anti-personnel systems:
 
 - Anti-air – The round will explode near the aircraft/missile and increase the chance to hit with fragmentation.  Obviously, this use is more relevant to our case. 
 
-<iframe width="560" height="420" src="https://www.youtube.com/watch?v=bdwjcayPuag" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="420" src="https://www.youtube-nocookie.com/embed/bdwjcayPuag" frameborder="0" allowfullscreen></iframe>
 
 ### Why Airburst?
 
-As you have seen in the video on the above section, Airburst can provide a huge advantage when trying to hit a flying target. We believe that directly hitting a fast and highly maneuverable space fighter could be a very challenging mission. Therefore, by using Airburst rounds and the ship’s firing computer, the fighters can shoot rounds that will automatically explode in proximity to their target. We can assume that these rounds will not be able to damage larger and more armored ships, but they would be perfect for taking down the smaller and less armored space fighters. 
+As you can see in the video on the above section, Airburst can provide a huge advantage when trying to hit a flying target. We believe that directly hitting a fast and highly maneuverable space fighter could be a very challenging mission. Therefore, by using Airburst rounds and the ship’s firing computer, the fighters can shoot rounds that will automatically explode in proximity to their target. We can assume that these rounds will not be able to damage larger and more armored ships, but they would be perfect for taking down the smaller and less armored space fighters. 
 
 
