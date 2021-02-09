@@ -19,6 +19,7 @@ layout: null
       type: $(this).attr('method'),
       url: endpoint + repository + '/' + branch + '/comments',
       data: $(this).serialize(),
+      crossDomain: true,
       contentType: 'application/x-www-form-urlencoded',
       success: function (data) {
         $('#comment-form-submit').addClass('d-none');
