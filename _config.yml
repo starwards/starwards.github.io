@@ -135,10 +135,10 @@ footer-link-col: "#404040"
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
 # whether or not you want to allow users to opt out of tracking.
-matomo:
-  site_id: "1"
-  uri: "blogstarwardsspace.matomo.cloud"
-  opt-out: true
+# matomo:
+#   site_id: "1"
+#   uri: "blogstarwardsspace.matomo.cloud"
+#   opt-out: true
 
 # --- Comments --- #
 
