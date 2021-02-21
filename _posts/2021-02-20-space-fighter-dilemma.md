@@ -4,7 +4,7 @@ title: The Space Fighter Dilemma
 subtitle: Will we have fighter class spaceships?
 tags: [product, dogfight]
 ---
-In one of our very first product brainstorming, we discussed what will be the [first milestone for Starwards](https://blog.starwards.space/2021-02-20-space-fighter-dilemma/). We agreed that we want to have a fully working dogfight between two ships.
+In one of our very first product brainstorming, we discussed what will be the [first milestone for Starwards](https://blog.starwards.space/2021-02-13-dogfight-first-milestone/). We agreed that we want to have a fully working dogfight between two ships.
 This decision brought up a dilemma: are we going to have a "fighter" ship class in our game? 
 
 ## Why we want fighters 
