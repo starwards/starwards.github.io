@@ -12,7 +12,7 @@ One of the first discussions we had after deciding on our first milestone (playa
 
 ### Range in space?
 
-Close range? Some of you might question the above statement, as the range for weapons in space can prove to be a bit tricky. After all, if I"m firing a projectile in space, it is will keep flying until it hits something. Unlike firing on the surface, there is no gravity or air friction to slow down my projectile.
+Close range? Some of you might question the above statement, as the range for weapons in space can prove to be a bit tricky. After all, if I'm firing a projectile in space, it is will keep flying until it hits something. Unlike firing on the surface, there is no gravity or air friction to slow down my projectile.
 
 
 ### Diffrenet weapons for each range
