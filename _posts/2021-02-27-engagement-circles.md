@@ -39,7 +39,7 @@ The intermediate engagement circle is a middle ground range for weapon systems t
 ### Long range
 Weapon systems that can destroy their targets from extremely long ranges will belong to this engagement circle. These weapon systems are self-propelled and can maneuver themselves into thier targets while relying on advanced sensors and guidance. For example, long-range torpedos are among the first weapon systems that come to mind when thinking about the long range engagement.
 
-<iframe width="560" height="420" src="https://www.youtube-nocookie.com/lILeKzCgCMo" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="420" src="https://www.youtube-nocookie.com/embed/lILeKzCgCMo" frameborder="0" allowfullscreen></iframe>
 
 ### Moving forward
 
