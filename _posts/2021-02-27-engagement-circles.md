@@ -17,12 +17,12 @@ Close range? Some of you might question the above statement, as the range for we
 
 ### Diffrenet weapons for each range
 
-If our weapons don't have range limitations, the weapon's actual limit is how well it is performing in different engagement ranges. For example, a hail of bullets might be extremely dangerous in very close ranges but very easy to avoid in long ranges of the projectile's extremely small size and speed.
+If our weapons don't have range limitations, the weapon's actual limit is how well it is performing in different engagement ranges. For example, a hail of bullets might be extremely dangerous in very close ranges but very easy to avoid in long ranges, due to the projectile's extremely small size and speed.
 This means we need to think about weapon systems that would be effective in different engagement ranges. 
 
 ## The three circles 
 
-We decided to divide the engagement ranges into three circles - close, intermediate, and long. The idea behind these circles is to define types of engagement, which will be different from each other and will employ diverse combat styles. Each weapon system in the game will belong to one of these engagement circles, where the exact range could be affected by the specific weapon system, ship’s sensors, firing computer, and more. Although many weapon systems can be used outside their designated engagement circle, their effectiveness can be affected drastically.  
+We decided to divide the engagement ranges into three circles - close, intermediate, and long. The idea behind these circles is to define types of engagements, which will be different from each other and will employ diverse combat styles. Each weapon system in the game will belong to one of these engagement circles, where the exact range could be affected by the specific weapon system, ship’s sensors, firing computer, and more. Although many weapon systems can be used outside their designated engagement circle, their effectiveness can be affected drastically.  
 
 ![Engagement-Circles](/assets/img/Engagement-Circles.jpg){: .mx-auto.d-block :}
 
