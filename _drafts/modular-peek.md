@@ -13,5 +13,4 @@ It will be possible to save and name the screens and then access them quickly fo
 
 On the video below, you can see the process of dragging and resizing the different components we have now to create a screen
 
-
-![Tactical](/assets/img/modular-screen.webm{: .mx-auto.d-block :}
+<iframe width="480" height="360" src="/assets/img/modular-screen.webm" frameborder="0"> </iframe>
