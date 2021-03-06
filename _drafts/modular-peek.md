@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build you own station 
+title: Build your own station 
 subtitle: our conecpet for building screens in Starwards
 tags: [design,stations,radar]
 ---
