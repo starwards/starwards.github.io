@@ -2,7 +2,7 @@
 layout: post
 title: Build your own station 
 subtitle: our conecpet for building screens in Starwards
-tags: [design,stations,radar]
+tags: [design,stations,radar,product]
 ---
 
 As we see Starwards as a platform to run LARPs in different sizes and amounts of players, we wanted to allow a dynamic process for creating the different screens and stations for the game. 
