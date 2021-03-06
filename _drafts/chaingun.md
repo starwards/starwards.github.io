@@ -3,6 +3,7 @@ layout: post
 title: Introducing the Chain gun
 subtitle: Our first weapon system
 tags: [blog, weapons, product, dogfight]
+author: daniel
 comments: true
 ---
 
