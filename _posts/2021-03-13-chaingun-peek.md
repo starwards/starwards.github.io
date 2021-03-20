@@ -2,7 +2,7 @@
 layout: post
 title: Chaingun goes brrrt
 subtitle: First look on the chaingun weapon system
-tags: [blog,weapons,dogfight,chaingun]
+tags: [weapons,dogfight,chaingun]
 comments: true
 ---
 
