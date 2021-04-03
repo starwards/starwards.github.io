@@ -2,7 +2,7 @@
 layout: post
 title: Designing a damage system
 subtitle: Conclusions from a design meeting about ship damage
-tags: [product]
+tags: [damage, product, game-design]
 comments: true
 ---
 
