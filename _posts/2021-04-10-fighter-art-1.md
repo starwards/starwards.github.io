@@ -13,6 +13,6 @@ Our requirements were more specific than we initially thought. To satisfy our hi
 
 Our efforts lead us to the understating that in order to have a model that will answer all of our requirements, we will need to design one for ourselves. We approached two talented concept artists and started the process of creating our ideal space fighter. 
 
-The image below is our first round of concept art. None of the models in that collection are exactly what we wanted, but it certainly helped us refine our ideas. How will the cockpit look? Is there a reason for the canopy to be transparent? How would the location of the thrusters affect the flight? Should the weapon be wholly embedded in the hully? And many more questions that we will need to address in the 2nd round of the concept art.
+The image below is our first round of concept art. None of the models in that collection are exactly what we wanted, but it certainly helped us refine our ideas. How will the cockpit look? Is there a reason for the canopy to be transparent? How would the location of the thrusters affect the flight? Should the weapon be wholly embedded in the hull? And many more questions that we will need to address in the 2nd round of the concept art.
 
 ![our first concept art](/assets/img/fighter-art-1.png){: .float-right :}
