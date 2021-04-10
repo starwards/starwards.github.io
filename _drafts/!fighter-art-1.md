@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Initial Fighter concept art
-subtitle: Beginning of our journey towards our custom art for the fighter ship
+subtitle: Beginning of our journey towards the ideal fighter ship
 tags: [product,art,fighter,dogfight]
 ---
 
