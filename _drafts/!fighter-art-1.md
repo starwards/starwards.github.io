@@ -5,7 +5,7 @@ subtitle: Beginning of our journey towards our custom art for the fighter ship
 tags: [product,art,fighter,dogfight]
 ---
 
-As our work on the 2nd milestone is in progress, we have also decided to advance in the game's art concepts.  We already have a [3d view with basic logic](/_posts/2021-02-05-3d-wired.md), but the current model we are using is not representing the fighter model from the [dogfight](/tags/#dogfight) milestone. We have deiced that it is time to replace it with something more fitting. 
+As our work on the 2nd milestone is in progress, we have also decided to advance in the game's art concepts.  We already have a [3d view with basic logic](/_posts/2021-02-05-3d-wired.md), but the current model we are using is not representing the fighter model from the [dogfight](/_tags/#dogfight) milestone. We have deiced that it is time to replace it with something more fitting. 
 
 We've searched the usual places, offering free and paid 3-D models for game development, but we could not find a design that fit what we had in mind.
 
