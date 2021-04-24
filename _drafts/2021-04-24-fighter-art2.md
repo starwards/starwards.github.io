@@ -17,7 +17,7 @@ We liked that the fighter indeed has the more armored appearance, and it had thr
 
 ![still not there](/assets/img/fighter-again.jpg){: .float-right :}
 
-Still not quite there. Yes, it looks much cooler now, but it still has wings. We thought that wings might make sense if they used to carry equipment or armaments. Then, we looked again at the model and had an idea! Why not use the "wings" as protection plates for the thrusters? When the main shaft is exposed, we can "sandwich" it between two metal plates. The fighter will still look cool, but now the shape has logic behind it.
+Still not quite there. Yes, it looks much cooler now, but it still has wings. We thought that wings might make sense if they used to carry equipment or armaments. Then, we looked again at the model and had an idea! Why not use the "wings" as protection plates for the thrusters? Right now, the main shaft is exposed, we can "sandwich" it between two metal plates. The fighter will still look cool, but now the shape has logic behind it.
 
 We also discussed regarding the cockpit and the canopy, is there any reason for it to be transparent? Wouldn't it make more sense that it will be wholly armored and the pilot will use sensors and cameras to "see"?
 
