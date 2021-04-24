@@ -13,14 +13,28 @@ However, the first sketch was still looking too much like an atmospheric jet fig
 
 ![not there yet](/assets/img/fighter-first.jpg){: .float-right :}
 
-g
+We liked that the fighter indeed has the more armored appearance, and it had thrusters for all directions, which supported our plan for its maneuverability. However, it was missing on few points; the biggest is - it has wings, and wings make no sense for a space-only vessel. We discussed with the artist and asked to remove the wings as they less fit our vision. below, you can see the first revision:
 
 ![still not there](/assets/img/fighter-again.jpg){: .float-right :}
 
-g
+Still not quite there. Yes, it looks much cooler now, but it still has wings. We thought that wings might make sense if they used to carry equipment or armaments. Then, we looked again at the model and had an idea! Why not use the "wings" as protection plates for the thrusters? When the main shaft is exposed, we can "sandwich" it between two metal plates. The fighter will still look cool, but now the shape has logic behind it.
+
+We also discussed regarding the cockpit and the canopy, is there any reason for it to be transparent? Wouldn't it make more sense that it will be wholly armored and the pilot will use sensors and cameras to "see"?
+
+Finally, we felt that the front of the fighter is still too round. As there is no need for the fighter to be aerodynamic, it makes sense to use more armor plating. We wanted its look to be more angled, similar to tanks with [sloped armor](https://en.wikipedia.org/wiki/Sloped_armour).
+
+The second revision was much better:
 
 ![looking better](/assets/img/fighter-almost.jpg){: .float-right :}
 
-g
+Almost there! This sketch was much closer to what we imagined. The thrusters with the armor plates were looking very good, but we agreed that the bottom plate needs to be the size and shape of the top plate. The canopy was mainly covered with armor plating beside a small section of armored glass. As we decided that the pilot doesn't need any "direct" vision, we wanted to remove the windows and cover the entire canopy with armor plates. The front part of the fighter is more angled now, as it should for maximum armor effectivnes. 
+
+You might notice the part in the front that looks like air intake and ask yourselves what the deal is with that. Obviously, we didn't want to add an air intake on a spacecraft, but we wanted to add gyroscopic thrusters (small thrusters that the ship uses to spin, turn and pivot). Our idea was that very small nozzles will be located in key locations of the fighter.
+
+After relaying the above input, we got the final revision:
 
 ![eureka](/assets/img/fighter-final.jpg){: .float-right :}
+
+Behold the beauty! This revision was precisely what we wanted. The cockpit is fully armored now, the wings are looking good and the black dots around the fighter represents the gyroscopic thrusters.
+
+However, this is just concept art, and now the real challenge will be to convert this drawing we love into a game-ready 3D model.
