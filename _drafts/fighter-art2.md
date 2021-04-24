@@ -1,3 +1,4 @@
+---
 layout: post
 title: Moving forward with concept art 
 subtitle: Continuing our journey towards the ideal fighter ship
