@@ -3,6 +3,7 @@ layout: post
 title: Moving forward with concept art 
 subtitle: Continuing our journey towards the ideal fighter ship
 tags: [product,art,fighter,dogfight]
+author: daniel
 ---
 
 Two weeks ago, we told you about our first steps with designing our [ideal space fighter](/2021-04-10-fighter-art-1), which ended with a collection of concept art but without a final design. We understood that we would need to properly define our needs for the artists in order to get a design that fits what we are thinking about.
