@@ -12,6 +12,7 @@ After hard work and about 40 revisions, the job was done. A new space fighter wa
 
 ## Dragonfly SF-22
 
+![Dragonfly SF-22](/assets/img/dragonfly.jpg){: .float-right :}
 
 
 
