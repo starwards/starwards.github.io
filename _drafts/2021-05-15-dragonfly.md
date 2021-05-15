@@ -15,9 +15,11 @@ After hard work and about 40 revisions, the job was done. A new space fighter wa
 
 We chose the name Dragonfly due to the ability of the fighter to maneuver in all directions. The code SF stands for “Space Fighter”. In our perception, space fighters will be treated more closely to fighter jets than a ship, meaning they will not have a unique call sign (the pilot will have one).
 
+The next steps will be loading the model into our engine and figuring out how to create thrusters animations that will work with the game logic.
 
+## Cool Renders
 
-
+We liked our new model so much that we went and created some cool renders of it. We hope you will like them as well
 
 ![Dragonfly SF-22](/assets/img/dragonfly1.png){: .float-right :}
 ![Dragonfly SF-22](/assets/img/dragonfly2.png){: .float-right :}
