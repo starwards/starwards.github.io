@@ -12,6 +12,7 @@ After hard work and about 40 revisions, the job was done. A new space fighter wa
 
 ## Dragonfly SF-22
 ![Dragonfly SF-22](/assets/img/dragonfly.jpg){: .float-right :}
+
 We chose the name Dragonfly due to the ability of the fighter to maneuver in all directions. The code SF stands for “Space Fighter”. In our perception, space fighters will be treated more closely to fighter jets than a ship, meaning they will not have a unique call sign (the pilot will have one).
 
 
