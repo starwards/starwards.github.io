@@ -21,7 +21,7 @@ author: Amir Arad and Daniel Ginat
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/nebula.png"
+avatar: "/assets/img/logo.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -38,7 +38,7 @@ round-avatar: true
 social-network-links:
   # email: "someone@example.com"
   # facebook: amir.arad.58
-  github: starwards
+  github: starwards/starwards
   # twitter: daattali
   # patreon: DeanAttali
   youtube: channel/UCEu4g365-qUsgna6XPBaC_w
@@ -58,6 +58,7 @@ social-network-links:
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
+  discord: p56nSVEjdb
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
