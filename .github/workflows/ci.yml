@@ -10,7 +10,10 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: true
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
       - name: Build the site
         run: bundle exec jekyll build --future --verbose
         env:
