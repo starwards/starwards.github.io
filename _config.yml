@@ -173,8 +173,6 @@ staticman:
     siteKey  : "6Ld3U1EaAAAAAKCI4HO5l4GJZYMS1-3-TcbhRZxK"
     secret   : "rnt+eb2ENO1iNdsN1Jwn/Rtqe/n5r37/6HTXrtaGydMlVABw19bMUngZq59iPvRNkAasKpg3LR4m6MADQcC+qd+YR/JTMPa+/TDhvtEjVsxGS0wYqj/vqCD8pRHLvoLTBUkFXEXcHiafVl3dOYxe+DmQpOgxCfBN7Lts7tpHVAHJ+ne3Kq3/lsLkUgDHYOXHULufF8A5WqIWP9raBRyNu4+LFjfVy4B8UaiCf0EQMIL27hpMzyEVPmZ5sDratpWzZGcFfa7oDrfbSGnw4wUFqDJooOvA2a/DY2uAqdsg1V9F65FggPEemZncAsf68RNRE+s0z+V/Ws78SAfchWhdGWyJiQyFFPSZ8JbYG0khoQ6/ufllEoMMpSiru33OPtvKmPx/sQBc+jAYyfCSKkYS3ObcCXNMQLxRI2T4Ice61bFG15pj/7Dyn72kPMLqyuQ9cp4/Fbb/TBkn7DxidxWkGtglxItHH55yfeWA1r3KO2J2wpcb4FrM30zSmG5sk3SMVchOA1jeKC+vhTR9D7UKBv8pNyN/RZ7r3s1URzLk6js4NvPmL+c8ktOMsFopGKgummPjlKGdpk/0bn5xi0D3Vvd1ixa34zqFa+Ar1TKoh6/b+GCbxxjYOoizZ/xiQuy2y1itY31JpES+pv6Z643tcj64G7iVQ708WrnWo9YHUU8="
 
-staticman_url: https://amir-staticman.herokuapp.com/v2/entry/starwards/starwards.github.io/master/comments
-
 # --- Misc --- #
 
 # Ruby Date Format to show dates of posts
