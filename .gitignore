@@ -2,6 +2,7 @@
 _site
 .sass-cache
 .vagrant
+vendor/bundle
 
 # general
 .DS_Store
