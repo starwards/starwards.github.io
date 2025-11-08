@@ -123,6 +123,21 @@ Built on Beautiful Jekyll theme v5.0.0:
 5. For videos/images, place in `assets/img/` and reference in post
 6. Posts automatically appear on homepage and in RSS feed
 
+### Writing Style
+
+**IMPORTANT:** This blog has a distinctive voice and style. Before writing new posts, review `WRITING_STYLE_ANALYSIS.md` for comprehensive guidelines.
+
+**Key style points:**
+- **Voice:** First-person plural "we" (team voice), conversational and honest
+- **Tone:** Transparent, self-reflective, occasionally self-deprecating humor
+- **Structure:** Context → Problem → Analysis → Decision/Solution, with clear H2/H3 headers
+- **Content:** Process over product; show the journey, not just results
+- **Language:** Technical but accessible; explain jargon; use parenthetical asides
+- **Philosophy:** Emphasize justification and "why" behind decisions; discuss trade-offs openly
+- **Media:** Integrate videos/images naturally into narrative flow
+
+Common tags: `product`, `design`, `dogfight`, `game-design`, `technology`, `stations`, `weapons`, `damage`, `gm`, `art`
+
 ## Staticman Comments
 
 The site uses Staticman for comments with a custom deployment:
