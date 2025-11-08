@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/vscode/devcontainers/ruby:0-2
+FROM mcr.microsoft.com/devcontainers/ruby:3.1
 
 # ENV Variables required by Jekyll
 ENV LANG=en_US.UTF-8 \
