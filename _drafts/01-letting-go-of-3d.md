@@ -1,176 +1,99 @@
 ---
 layout: post
 title: "Letting Go of 3D: A Focus Decision"
-subtitle: Sometimes progress means deleting six months of work
+subtitle: Why we removed the 3D rendering code (and what we learned about priorities)
 tags: [product, design, technology]
 ---
 
-In March 2024, we opened [Pull Request #1659](https://github.com/starwards/starwards/pull/1659). The title was straightforward: "Remove 3D rendering."
+In March 2024, we deleted all the 3D rendering code from Starwards. This was the code we'd spent months building in 2021 and showed off in early blog posts. The entire `modules/browser/src/3d/` directory, along with the 3D main screen view—all gone.
 
-The diff was brutal: **4,523 deletions**. No additions. Just deletions.
+[Pull Request #1659](https://github.com/starwards/starwards/pull/1659) if you want to see the diff. It's 4,523 lines of deletions.
 
-We removed:
-- The entire `modules/browser/src/3d/` directory
-- Lights, meshes, objects, particles, skybox, space-scene—all of it
-- The 3D main screen view we'd built
-- Six months of work from 2021
+This probably seems strange. We built something, showed it off, then deleted it? What happened?
 
-And then we merged it.
+## Why We Built 3D In The First Place
 
-If you've been following Starwards since the early days, you might remember the 3D experiments. We were excited about them. We showed them off in blog posts and videos. They looked cool. Spinning 3D ship models, particle effects, a proper space skybox—all the stuff you'd expect from a space game.
+Back in 2021, we wanted Starwards to have feature parity with existing bridge simulators and the "wow factor" that comes with 3D space views. It's not strictly necessary for a LARP game, but it adds to immersion—seeing your ship from outside, watching explosions in 3D space, having a cinematic view of combat.
 
-So why did we delete it all?
+We had the technical capability to do it (Three.js integration with our existing PixiJS rendering), so we built it. And it worked. We had 3D ship models, particle effects, skyboxes, proper lighting.
 
-The short answer: focus. The longer answer involves some hard lessons about productivity, scope, and knowing what actually matters for the experience we're trying to create.
+But as we continued developing other systems, we started noticing the cost.
 
-## The 3D Dream
+## The Cost of 3D
 
-Let's go back to 2021. We'd just finished the dogfight milestone. Starwards was working—ships could fly, shoot, take damage. But it was all 2D. Top-down tactical view using PixiJS for rendering.
+The 3D rendering wasn't just code—it was an entire pipeline:
 
-And we started thinking: wouldn't it look amazing in 3D?
+**Technical complexity:** Integrating Three.js alongside PixiJS meant managing two rendering systems. Different update loops, different coordinate systems, different performance characteristics.
 
-Imagine: a first-person view from the bridge. 3D ship models with proper lighting. Particle effects for engine trails and explosions. A realistic space environment with skyboxes and nebulae.
+**Asset creation:** 3D models need to be created, textured, and optimized. Every new ship type meant 3D modeling work, not just defining stats and behavior.
 
-It was seductive. Space games are *supposed* to be 3D, right? Elite Dangerous, Star Citizen, Everspace—they're all 3D. And we had the technical chops to do it. How hard could it be?
+**Maintenance burden:** Both rendering systems needed to be kept in sync with game state. Changes to ship systems often meant updating both 2D and 3D representations.
 
-(Narrator: It was hard.)
+**Performance overhead:** 3D rendering is expensive. We were already running a physics simulation at 60Hz and syncing state across multiple clients. Adding 3D rendering on top was pushing performance limits.
 
-## The Reality of 3D
+The critical realization: all this effort was going toward a feature that wasn't essential for the core LARP experience.
 
-Here's what we learned very quickly: 3D rendering is a deep, deep rabbit hole.
+## What LARP Actually Needs
 
-You can't just slap Three.js onto your PixiJS game and call it a day. You need:
-- 3D models for every ship (modeled, textured, optimized)
-- A lighting system that looks good
-- Particle systems for effects
-- Camera management (multiple views, smooth transitions)
-- Performance optimization (3D is expensive)
-- Integration with your existing 2D UI
+In a bridge simulator LARP, players are at stations. The pilot needs helm controls and a tactical view. The weapons officer needs targeting information. The engineer needs system status displays. The captain needs an overview of the tactical situation.
 
-And every one of those items expands into sub-items. Want good lighting? You're learning about ambient vs. directional vs. point lights, shadows, normal maps. Want particle effects? You're diving into sprite sheets, billboard rendering, alpha blending.
+What they need most is *information*, presented clearly and quickly.
 
-We spent months on it. And we got it working! The 3D view existed. It was functional. You could see ships in 3D, flying through space with a skybox behind them.
+The 2D tactical overhead view does this better than 3D for most purposes:
+- You can see all ships in an engagement at once
+- Distance and position relationships are clear
+- Damaged armor sections are easy to visualize
+- Multiple contacts don't occlude each other
 
-But here's the thing we slowly realized: **it didn't add LARP value**.
+The 3D view looks cool, but it's not where players spend their time during actual play. It's a nice-to-have, not a must-have.
 
-## The LARP Value Question
+And in March 2024, when we were focusing efforts on reaching a LARP-playable product, we had to make choices about where to spend development time. The 3D rendering wasn't making the cut.
 
-Starwards isn't a single-player space sim. It's a multiplayer LARP simulator. The goal isn't to make *you* feel like a spaceship pilot—it's to make a *room full of people* feel like they're running a spaceship together.
+## The Unity Alternative
 
-That changes everything.
+Here's the other key piece: we'd successfully built a proof-of-concept of connecting to our Colyseus server using the Unity game engine.
 
-In a LARP bridge simulator, players aren't staring at a first-person view. They're at stations. The pilot has their controls. The weapons officer has their targeting display. The engineer has their power management screen. The captain has the tactical overview.
+Colyseus has polyglot capability—clients can be written in any language with a Colyseus client library. The Unity C# client works fine. We proved we could connect Unity to our existing server and sync game state.
 
-And almost universally, what they need is *information*, not immersion.
+This means when we eventually return to 3D rendering (and we probably will), we can build it as a completely separate client. A Unity-based 3D view that connects to the same server as the web client, receives the same state updates, and renders everything in proper 3D.
 
-The pilot needs to know: Where am I? Where am I going? What's my velocity? Where are the enemies?
+That's actually the right technical choice anyway. The 3D main screen is so different from the station UI (different requirements, different input handling, different rendering approach) that having it as a separate client makes sense administratively and architecturally.
 
-The weapons officer needs to know: What's in range? What's targeted? When can I fire?
-
-The engineer needs to know: Which systems are damaged? How's my power budget? Where's the heat building up?
-
-A 3D view answers... almost none of those questions effectively.
-
-You can show a ship in 3D, spinning beautifully in space. But can you tell at a glance which armor plates are damaged? Not really. Can you see the tactical situation of five ships in a furball? Not as well as a top-down view. Can you read your exact heading and velocity? Only if you overlay a bunch of UI, at which point why have 3D at all?
-
-The 2D tactical view we already had was *better* at conveying the information players needed. It was clearer. It was faster to read. It scaled better to multiple ships.
-
-We'd spent six months building something that looked cool but made the game harder to play.
-
-## The Productivity Cost
-
-But the LARP value question wasn't the only issue. There was also the opportunity cost.
-
-Every hour we spent tweaking the 3D lighting was an hour we *didn't* spend implementing:
-- The energy management system we'd designed
-- Missiles and torpedoes
-- The sectional armor system
-- Heat and coolant distribution
-- Docking mechanics
-- Warp drives
-
-All the engineering content we'd been promising since the "second milestone" post in March 2021. All the systems that would actually deepen the LARP experience.
-
-We were polishing the spectacle while neglecting the substance.
-
-And here's the uncomfortable truth: 3D rendering is *fun* to work on. It's visually rewarding. You make a change, refresh the page, and boom—prettier explosions. Instant gratification.
-
-Energy management? That's math and game balance and UI work. It's harder. It's less immediately satisfying. But it's what makes the game actually interesting to play.
-
-We were procrastinating on hard work by doing fun work. And the fun work was consuming resources we didn't have.
+So we're not abandoning 3D forever. We're deferring it until we have bandwidth to do it properly, and when we do, it'll be a separate Unity client rather than trying to jam Three.js into our web-based station interface.
 
 ## The Decision
 
-After giving it deep thought (and after starting the rewrite in March 2024), we asked ourselves: What if we just... removed it?
+Given all this, the decision became straightforward:
+1. Remove the 3D code from the main client to reduce complexity and maintenance burden
+2. Focus development effort on the core systems needed for LARP play (energy, combat, navigation, damage)
+3. Revisit 3D later as a separate Unity client when it makes sense
 
-What if we fully committed to 2D? Not as a limitation, but as a *strength*. Not "we can't do 3D," but "we're choosing clarity over spectacle."
-
-The tactical view could be our signature. Bridge simulators like Artemis and EmptyEpsilon use 2D tactical displays—and they work. They're clear, they're functional, they communicate information effectively.
-
-We could take the time we'd spend maintaining 3D rendering and pour it into:
-- Better tactical displays
-- More informative widgets
-- Clearer damage visualization
-- Richer system interactions
-
-We could choose *depth* over *spectacle*.
-
-And so we did. PR #1659. Delete it all. Start fresh.
-
-## What We Kept
-
-To be clear: we didn't delete everything visual. We kept (and improved) all the 2D rendering:
-- PixiJS for all graphics
-- The tactical overhead view
-- Ship sprites and effects
-- The modular widget system
-- The radar displays
-
-We just stopped trying to render a 3D scene alongside it. We simplified. We focused.
+So we deleted it. All of it. The lights, meshes, particle systems, skybox, camera management—everything in that 4,523-line diff.
 
 ## What We Gained
 
-Since making this decision, here's what we've shipped:
-- Complete energy, heat, and coolant systems (Post 2 in this series)
-- Missiles with homing and proximity detonation (Post 3)
-- Full sectional armor implementation (Post 4)
-- Sophisticated bot AI (Post 5)
-- Warp drives, waypoints, docking (Post 6)
-- Combat refinements and targeting systems (Post 7)
-- Comprehensive documentation and testing (Post 8)
+Since removing the 3D code, development has been faster. We don't have to maintain two rendering pipelines. We don't have to create 3D assets. We don't have to worry about 3D performance.
 
-Would we have shipped all that if we'd kept the 3D rendering? Honestly? Probably not. We'd still be tweaking light positions and optimizing shadow rendering.
+And we've shipped all the core systems that were on the roadmap:
+- Energy, heat, and coolant management
+- Missiles and torpedoes
+- Sectional armor
+- Bot AI and autopilot
+- Warp drives and navigation
+- Docking systems
 
-The 3D work was a tax on every other feature. Removing it felt like taking off ankle weights we didn't know we were wearing.
+Would we have shipped all that if we'd kept the 3D rendering? Probably eventually, but it would have taken longer. Every feature would have needed both 2D and 3D implementations.
 
 ## The Lesson
 
-Here's what we learned: **Scope is the enemy of depth.**
+The lesson isn't "3D is bad" or "we made a mistake building it in the first place." The lesson is about focus and priorities.
 
-You can build a game with a hundred features, each one shallow. Or you can build a game with twenty features, each one deep and polished and interconnected.
+When you're building a complex system, especially with limited development resources, you have to make choices about what to build, what to defer, and what to cut. Those choices should be based on what actually serves your core goals.
 
-For a LARP simulator, depth wins every time. We'd rather have a rich energy management system that creates interesting engineering decisions than a pretty 3D skybox.
+For Starwards, the core goal is a functional LARP bridge simulator. The 3D rendering was supporting that goal, but it wasn't essential to it. So when we needed to focus our efforts, it was the right thing to cut.
 
-We'd rather have armor that works exactly right—with angle calculations and penetration mechanics and visual feedback—than have 3D ship models spinning in space.
-
-We'd rather players spend their time managing heat distribution and power allocation than admiring particle effects.
-
-None of this means 3D is bad. It means 3D wasn't right *for us*, *for this project*, *at this stage*.
-
-Maybe someday we'll revisit it. Maybe when all the core systems are done, we'll look at adding a 3D tactical view as an alternative. Maybe.
-
-But for now, we're 2D and proud.
-
-## The Pull Request
-
-If you want to see exactly what we deleted, [PR #1659](https://github.com/starwards/starwards/pull/1659) is still up on GitHub. It's oddly satisfying to scroll through thousands of red deletion lines.
-
-It represents a decision. A focus. A commitment to building the game we actually want to play, not the game we think we're supposed to build.
-
-Sometimes progress looks like addition. Sometimes it looks like deletion.
-
-This time, it looked like deleting 4,523 lines of code and not looking back.
+We can always add it back later (as a separate Unity client). But for now, we're 2D and focused on depth over spectacle.
 
 ---
 
-**Next in this series:** "Engineering Complete: Energy, Heat, and System Effectiveness" — where we finally deliver on that "second milestone" promise from 2021 and show you where all that reclaimed development time went.
+**Next in this series:** "Engineering Complete: Energy, Heat, and System Effectiveness" — where we show you the complete engineering systems we built with all that reclaimed development time.

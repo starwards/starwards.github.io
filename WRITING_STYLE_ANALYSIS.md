@@ -286,6 +286,23 @@ To maintain consistency:
 - Present decisions without explaining the "why"
 - Make posts too short (prefer depth over brevity)
 
+### CRITICAL: Avoid AI Social Media Content Patterns
+
+The Starwards voice is **NOT**:
+- **Dramatic pacing with artificial tension** — No "And then we merged it." / "And it worked." style one-liners for effect
+- **Extracting drama from mundane decisions** — Don't artificially inflate the importance of technical choices
+- **Breaking rhythm with short paragraphs** — Substantial paragraphs with natural flow, not choppy dramatic beats
+- **Marketing speak** — No "Here's what we learned:" / "The result:" / "And that's when we realized:" formula writing
+- **Listicle structure** — Not everything needs to be numbered points and bold headers
+- **Cliffhanger transitions** — No "But here's the thing..." / "Here's where it gets interesting..." artificial hooks
+
+The Starwards voice **IS**:
+- **Matter-of-fact even about big decisions** — "We removed the 3D code" not "In March 2024, we made a decision that was both liberating and terrifying..."
+- **Natural pacing** — Let the content create its own rhythm, don't force dramatic beats
+- **Substantial paragraphs** — Explain things fully in proper paragraph form
+- **Straightforward** — Say what happened, why it happened, what it means
+- **Honest without being performative** — Admitting mistakes without making a show of vulnerability
+
 ### Tone Checklist:
 - [ ] Conversational but informative
 - [ ] Honest about challenges
