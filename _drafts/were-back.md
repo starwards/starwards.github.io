@@ -1,69 +1,66 @@
 ---
 layout: post
-title: We're Back! (And We Have Stories to Tell)
-subtitle: After 2.5 years of silence, catching up on everything that happened
-tags: [story, product]
+title: We're Back
+subtitle: Four years of Starwards development, condensed
+tags: [product, story, technology]
 ---
 
-It's been 867 days since our last blog post. The last time we posted was June 2022—we'd just implemented radar damage and shown off some simple AI commands.
+The last blog post was in June 2022. It's been almost four years. A lot happened — both in the project and in our lives — and we owe you an update.
 
-Then the blog went silent. Not because the project stopped (it didn't), but because we were heads-down building and forgot to document along the way. Classic mistake.
+We're not going to be dramatic about the silence. Life got complicated (a war started in October 2023, and Amir eventually immigrated to the Netherlands in late 2025), and somewhere along the way writing blog posts fell off the priority list. The project never stopped, though. It slowed down, sped up, and changed shape — but it kept going.
 
-So here we are in November 2024, with two and a half years of work to catch up on.
+Here's what actually happened.
 
-## What We've Been Building
+## The 2022 Golden Era
 
-Since June 2022, we've implemented most of the systems we'd only designed on paper:
+The second half of 2022 was, by a wide margin, the most productive period in the project's history. We pushed over 500 commits and shipped 15 releases (v0.0.4 through v0.5.1) between August and December. If you look at the git log from that period, it's almost hard to believe.
 
-- Complete energy and heat management (the "engineering milestone" we promised back in 2021)
-- Missiles with homing guidance and proximity detonation (completing the three engagement circles)
-- Full sectional armor system (the Battletech-inspired design from April 2021, now actually working)
-- Bot AI with tactical orders (evolved from that spiral bug we showed in June 2022)
-- Warp drives, waypoints, and docking
-- Comprehensive documentation and testing infrastructure
-- We also removed the 3D rendering code (more on that later)
+This is when most of the core systems were built:
 
-We also shifted focus in March 2024 to concentrate on reaching a LARP-playable product rather than continuing to explore every possible feature. That meant making hard choices about what to build, what to defer, and what to cut.
+- **Warp drives** — FTL travel with charging mechanics and heat management
+- **Docking** — ship-to-ship attachment for resupply
+- **Waypoints and pilot radar** — navigation beyond "fly towards the dot"
+- **Weapons station screen** — a proper gunner interface
+- **Pilot station screen** — helm controls that made sense
+- **Node-RED integration** — external scripting for GMs and scenario designers
+- **Magazine and ammo systems** — finite ammunition with loading mechanics
+- **System status widgets** — engineering readouts for ship systems
 
-## Why We Went Silent
+We also migrated to PixiJS 7 and established a release pipeline. By the end of 2022, the game had gone from "dogfight prototype" (which is where the blog left off) to something that looked like an actual bridge simulator with multiple stations.
 
-Honest answer: we got focused on building and didn't make time to write about it.
+## 2023: Slowing Down
 
-There was also some uncertainty about how to communicate what we were doing. When you're focusing efforts and cutting scope, it can feel like admitting failure. When you're deleting code you previously showed off (like the 3D rendering), it's uncomfortable to explain.
+2023 was a different story. Only 35 commits the entire year. In the first half, we built the Engineering Control Room screen — power allocation, coolant management, warp controls, the armor widget. It was good work that rounded out the engineering gameplay we'd been designing since the [second milestone]({% post_url 2021-03-27-2nd-milestone %}).
 
-But that's exactly why we should have kept writing—to work through those decisions in public and document the reasoning.
+We had planned a LARP event for December 2023 — one last run using EmptyEpsilon before switching fully to Starwards. Then the war started in October, and those plans fell apart along with a lot of other things.
 
-We didn't. We stayed quiet. That was a mistake.
+One thing that did start in early 2023 was using AI-assisted development. At first it was modest — help with boilerplate, exploring design options, that sort of thing. This turned out to be more important than we realized at the time.
 
-## What's Coming
+## 2024: The Refocus
 
-Over the next few months, we're going to write a series of posts covering everything that happened since June 2022. Each post will focus on one system or decision:
+By early 2024, we had a decision to make. The codebase had grown in many directions — 3D rendering, engineering systems, weapons, navigation — but it wasn't playable as a LARP product. We needed to focus.
 
-- Why we removed 3D rendering (and why that was the right call)
-- The complete energy, heat, and coolant systems
-- Missiles, torpedoes, and explosion physics
-- Sectional armor implementation (finally done right)
-- Bot AI and autopilot systems
-- Navigation: warp, waypoints, and docking
-- Combat refinements and targeting
-- Documentation and testing infrastructure
-- The development approach and what we learned
-- Where we're heading in 2025
+The biggest call was removing the 3D main screen. We'd had a Three.js-based 3D view running alongside the PixiJS 2D tactical display since 2021 (we even [blogged about it]({% post_url 2021-01-29-first-3d %})). Maintaining two rendering systems was expensive, and for LARP play the 2D tactical view is genuinely better — you can see all ships at once, distances are clear, no occlusion issues. We had a modest proof-of-concept showing that a Unity client could connect via Colyseus's polyglot support, so the plan became: focus on 2D now, do 3D properly as a separate Unity client later. That PR deleted 4,523 lines of 3D code in March 2024.
 
-These won't be announcement posts. We're going to show the work, explain the decisions, and be honest about what worked and what didn't.
+The rest of 2024 was cleanup and refinement:
 
-## Where We Are Now
+- **Memory leak fixes** — Colyseus schema listeners accumulating, MapSchema `.toArray()` issues. The kind of bugs you only find after long sessions.
+- **Armor system fixes** — The [sectional armor]({% post_url 2021-04-03-damage-system %}) we designed in 2021 was finally implemented correctly. Hit angle calculations and damage formulas that actually worked.
+- **Bot AI and GM controls** — Remember the [spiral bug]({% post_url 2022-06-12-simple-ai-commands-wip %})? The smart pilot got a proper rewrite with angle targeting, position targeting, and tactical orders (MOVE, ATTACK, FOLLOW). GMs can now right-click to command NPC ships.
+- **Object lifecycle** — GMs can create and destroy objects. Sounds basic, but it wasn't there before.
 
-As of November 2024, Starwards has the core systems needed for a LARP bridge simulator. Energy management, combat, navigation, damage—it's all there and it works.
+106 commits total. Not a huge number, but targeted work that made the game significantly more solid.
 
-Is it complete? No. There are still features on the roadmap: corvette-class ships, advanced damage reports, cyber warfare, and more. But the foundation is solid.
+## 2025: The Revival
 
-More importantly, we're back to writing about it. We're going to keep this blog active going forward, documenting progress as we make it rather than going silent for years at a time.
+Most of 2025 was quiet. Then in Q4, things picked up again — 131 commits between October and December, but the focus was different from previous bursts.
 
-## What's Next
+This time it was about sustainability: making the project something that could survive our increasingly busy lives. We wrote extensive documentation (architecture guides, subsystem specs, physics docs, development patterns), built out Playwright E2E testing, set up CI/CD with preview deployments, and integrated Claude Code into the development workflow.
 
-The first post in the series will be about the 3D rendering decision. We spent months building 3D in 2021, showed it off in the blog, then deleted it all in 2024. That probably seems strange, so we're going to explain exactly why we did it and what we learned about focus and priorities.
+That last part deserves a mention. AI-assisted development is what makes this project viable for us right now. We both have day jobs and lives that are more complicated than they were in 2021. The ability to describe what we want, review what gets produced, and iterate quickly has changed the economics of side-project development. Daniel is coming back to active development soon, also working in this style.
 
-See you in a week or two.
+## Where This Leaves Us
 
-(And yes, the radar damage you read about in June 2022 still works. We kept the good stuff.)
+So that's the story. Four years of uneven but persistent progress, shaped by both technical decisions and life circumstances. The game is significantly more complete than when the blog went silent — all the core systems we designed in 2021 are now implemented and working.
+
+The next post covers where Starwards actually stands today: what's built, what works, and what's still missing.
