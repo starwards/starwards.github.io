@@ -5,7 +5,7 @@ subtitle: What's built, what works, and what's missing
 tags: [product, story, game-design, technology]
 ---
 
-This is the companion to [We're Back]({% post_url were-back %}), which covered the history. This post is about the present.
+This is the companion to [We're Back]({% post_url 2026-04-12-were-back %}), which covered the history. This post is about the present.
 
 ## What's Built
 
