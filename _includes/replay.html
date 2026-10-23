@@ -1,0 +1,18 @@
+{%- comment -%}
+Interactive Starwards recording player, embedded in a post.
+Usage: {% include replay.html src="/assets/recordings/my-run.sgr" caption="What to watch for" height="560" %}
+`src` is a .sgr recording committed under assets/recordings/. The player itself is a static build of
+starwards' modules/browser (`npm run build:player`), vendored under /player/.
+{%- endcomment -%}
+{%- assign replay_height = include.height | default: 560 -%}
+<figure class="replay-embed">
+  <iframe
+    src="{{ '/player/player.html' | relative_url }}?src={{ include.src | relative_url | uri_escape }}"
+    title="{{ include.caption | default: 'Starwards recording replay' | escape }}"
+    style="width: 100%; height: {{ replay_height }}px; border: 1px solid #333; border-radius: 4px; background: #0f0f0f;"
+    loading="lazy"
+    allowfullscreen></iframe>
+  {%- if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {%- endif %}
+</figure>
